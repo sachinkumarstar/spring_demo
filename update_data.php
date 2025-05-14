@@ -31,6 +31,12 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     header("Location: fetch_data.php");
     exit;
 }
+session_start();
+
+if (!isset($_SESSION['email'])) {
+    header("Location: login.php");
+    exit();
+}
 ?>
 
 <!DOCTYPE html>

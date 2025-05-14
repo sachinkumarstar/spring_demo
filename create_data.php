@@ -1,3 +1,14 @@
+<?php
+session_start();
+
+if (!isset($_SESSION['email'])) {
+    header("Location: login.php");
+    exit();
+}
+?>
+<!-- create_data.php ka HTML & form yaha aata hai -->
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -24,7 +35,8 @@
 <body>
 
 <div class="container">
-    
+   <a href="fetch_data.php"> <button class="btn btn-primary">See All Data</button></a>
+   <a href="logout.php"> <button class="btn btn-primary">Log Out</button></a>
     <h2 class="text-center mb-4">Create Student Record</h2>
     <form id="studentForm">
         <div class="mb-3">
