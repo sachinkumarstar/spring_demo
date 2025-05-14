@@ -7,6 +7,10 @@
 <body>
 
 <div class="container mt-5">
+    <div class="text-center">
+        <a href="create_data.php" class="btn btn-success">Create New Student</a>
+    </div>
+    
     <h2 class="mb-4 text-center">Student Data</h2>
 
     <?php

@@ -24,6 +24,7 @@
 <body>
 
 <div class="container">
+    
     <h2 class="text-center mb-4">Create Student Record</h2>
     <form id="studentForm">
         <div class="mb-3">
